@@ -1,0 +1,31 @@
+Para submeter suas soluções em Javascript, você deve seguir as seguintes instruções:
+
+A entrada de dados deve ser feita utilizando o comando scanf, a saída deve ser feita utilizando o comando printf. Esses comandos foram desenvolvidos para o ambiente Saci e são muito parecidos com os comandos de mesmo nome na linguagem C.
+O comando de escrita printf
+O comando printf é exatamente igual ao comando de mesmo nome da linguagem C. O formato geral é
+
+printf("cadeia_formatadora", lista_de_expressoes);
+onde cadeia formatadora é uma cadeia que será impressa, podendo conter especificadores de formato que serão usados para escrever as expressões da lista_de_expressoes. Os mesmos especificadores de formato da linguagem C são aceitos: %d para inteiros, %s para cadeias de caracteres, %f para números reais,...
+
+O comando de entrada scanf
+O comando scanf também é similar ao comando homônimo da linguagem C, mas com duas diferenças: na lista de variáveis do comando, os nomes das variáveis devem ser colocadas entre aspas. E há uma restrição: as variáveis utilizadas no comando scanf devem ter escopo global.
+
+O formato geral é
+
+scanf("cadeia_formatadora", lista_de_variáveis);
+onde cadeia formatadora é uma cadeia que deve conter especificadores de formato que serão usados para ler os valores da entrada para as variáveis da lista_de_variáveis. Os mesmos especificadores de formato da linguagem C são aceitos: %d para inteiros, %s para cadeias de caracteres, %f para números reais,...
+
+Um pequeno exemplo
+O exemplo abaixo lê dois valores inteiros e imprime o maior valor.
+
+// declara duas variáveis
+var val1, val2;
+
+// lê dois valores inteiros
+scanf("%d%d", "val1", "val2");
+
+// escreve o resultado
+if (val1 > val2)
+    printf("%d\n", val1);
+else
+    printf("%d\n", val2);
